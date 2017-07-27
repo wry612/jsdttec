@@ -1,0 +1,17 @@
+body{
+    background: url(../images/case-banner.jpg) center top no-repeat;
+}
+.case .header{
+    height:230px;
+}
+.company-wrap{
+    display: flex;
+    justify-content: space-between;
+    flex-flow: wrap;
+    margin:110px 0 80px;
+}
+.company-wrap img {
+    width: 291px;
+    height: 174px;
+    margin-top: 10px;
+}

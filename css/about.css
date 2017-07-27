@@ -1,0 +1,46 @@
+body{
+    background: url(../images/about-banner.jpg) center top no-repeat;
+}
+.about .header{
+    height:320px;
+}
+.about-desc{
+    color:#666666;
+    font-size:14px;
+    line-height: 26px;
+}
+.td{
+    width: 100%;
+    min-width: 1200px;
+    height: 400px;
+    background: url(../images/about-img2.jpg) center no-repeat;
+}
+.honor { width: 1200px; margin: 30px auto;}
+.honor .h-list h2{ font: 14px/30px arial,tahoma,"microsoft yahei"; color: #999; padding-left: 20px;}
+.honor .h-list .list1 li{ font: 18px/30px arial,tahoma,"microsoft yahei"; color: #1a1a1a;}
+.honor .h-list .list2 li{ font: 16px/30px arial,tahoma,"microsoft yahei"; color: #1a1a1a;}
+.honor .h-img{ margin-left: 630px; padding-top: 100px;}
+.honor .h-list li.l-hover{ color:#fff; background: #243676;}
+.honor .h-list li{ padding-left: 20px; cursor: pointer;}
+
+.joinUs{ width: 100%; background: #f3f3f3; padding: 40px 0 75px 0;}
+.joinBox{ width: 1200px; margin: 0 auto;}
+.joinList{ width: 100%; margin-bottom: 2px; background: #FFF;}
+.joinList .j-title{ position: relative; height: 80px; padding-left: 125px; padding-top: 20px; cursor: pointer;}
+.joinList .j-title .ico{ position: absolute; top: 27px; left: 40px;}
+.joinList .j-title .check{ position: absolute; top: 38px; right: 38px; display: block; width: 32px; height: 32px; background: url(../images/ico_check.png) no-repeat;}
+.joinList .j-title .checked{ position: absolute; top: 38px; right: 38px; display: block; width: 32px; height: 32px; background: url(../images/ico_checked.png) no-repeat;}
+.joinList .j-title h2{ font: 24px/1.5 arial,tahoma,"microsoft yahei"; color: #666;}
+.joinList .j-title p{ font: 14px/1.5 arial,tahoma,"microsoft yahei"; color: #999; margin-top: 5px;}
+.joinList .j-main{ display: none; padding: 5px 0 15px 0;}
+.joinList .j-main li{ margin-left: 40px; font: 14px/30px arial,tahoma,"microsoft yahei"; color: #999;}
+
+.address{ width: 100%; height: 400px; position: relative; }
+.address .a-info{ width: 550px; height: 400px; margin: 0 auto; padding:20px 0 0 50px;}
+.address .a-info .font1{ font-size: 14px;}
+.address .a-info .a-left{ width: 190px; float: left;}
+.address .a-info .a-left li{ font: 18px/40px arial,tahoma,"microsoft yahei"; color: #1a1a1a; padding-left: 15px;}
+.address .a-info .a-left li.active{ background: url(../images/icon_company.png) left center no-repeat; color: #ff3333;}
+.address .a-info .a-right{ margin-left: 190px;}
+.address .a-info .a-right li{ font: 14px/24px arial,tahoma,"microsoft yahei"; color: #1a1a1a;}
+.address .a-map{ width: 50%; height: 400px; position: absolute; right: 0; top: 0;}

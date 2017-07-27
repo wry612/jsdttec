@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>大泰技术</title>
+    <link rel="stylesheet" type="text/css" href="css/base.css">
+    <link rel="stylesheet" type="text/css" href="css/common.css">
+    <link rel="stylesheet" type="text/css" href="css/productDetails.css">
+</head>
+<body class="product-details" onhashchange="changePage()">
+<!--header start-->
+<div class="header">
+    <div class="nav-wrap">
+        <a href="index.html"><img src="images/logo-white.png"></a>
+        <div class="nav-menu">
+            <a href="index.html">首页</a>
+            <a href="product.html" class="active">产品与解决方案</a>
+            <a href="case.html">经典案例</a>
+            <a href="about.html">关于大泰</a>
+            <div class="nav-arrow"></div>
+        </div>
+    </div>
+</div>
+<!--header end-->
+
+<!--content start-->
+<div class="content mt40 mb130">
+    <div class="container clearfix">
+        <div class="float-right right-content" id="rightContent"></div>
+        <div class="float-left left-nav">
+            <div class="left-title"></div>
+            <div class="nav-box">
+                <ul class="box-item">
+                    <li class="nav-type">解决方案</li>
+                    <li>
+                        <a href="#page1" class="active">交易平台研发</a>
+                    </li>
+                    <li>
+                        <a href="#page2">会员单位信息服务</a>
+                    </li>
+                    <li>
+                        <a href="#page3">移动APP开发</a>
+                    </li>
+                </ul>
+                <ul class="box-item">
+                    <li class="nav-type">产品</li>
+                    <li>
+                        <a href="#page4">连续现货交易系统</a>
+                    </li>
+                    <li>
+                        <a href="#page5">发售系统</a>
+                    </li>
+                    <li>
+                        <a href="#page6">会员数据分析系统</a>
+                    </li>
+                    <li>
+                        <a href="#page7">移动交易客户端</a>
+                    </li>
+                    <li>
+                        <a href="#page8">微信公众平台</a>
+                    </li>
+                </ul>
+                <div><a href="index.html" class="back-index"></a></div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--content end-->
+
+<!--footer start-->
+<div class="footer">
+    <div class="main footNav f-cb">
+        <div class="f-nav f-cb">
+            <div class="navList">
+                <h2>解决方案</h2>
+                <ul>
+                    <li><a href="productDetails.html#page1">交易平台开发</a></li>
+                    <li><a href="productDetails.html#page2">会员单位信息服务</a></li>
+                    <li><a href="productDetails.html#page3">移动APP开发</a></li>
+                </ul>
+            </div>
+            <div class="navList">
+                <h2>产品中心</h2>
+                <ul>
+                    <li><a href="productDetails.html#page5">发售系统</a></li>
+                    <li><a href="productDetails.html#page4">连续现货交易系统</a></li>
+                    <li><a href="productDetails.html#page6">会员数据分析系统</a></li>
+                    <li><a href="productDetails.html#page7">移动交易客户端</a></li>
+                    <li><a href="productDetails.html#page8">微信公众平台</a></li>
+                </ul>
+            </div>
+            <div class="navList" style="margin-right: 50px;">
+                <h2>经典案例</h2>
+                <ul>
+                    <li><a href="case.html">江苏交易场所登记结算有限公司</a></li>
+                    <li><a href="case.html">大圆普洱</a></li>
+                    <li><a href="case.html">圆昶金融</a></li>
+                    <li><a href="case.html">莱斯商城</a></li>
+                    <li><a href="case.html">泰金所</a></li>
+                </ul>
+            </div>
+            <div class="navList">
+                <h2>公司介绍</h2>
+                <ul>
+                    <li><a href="about.html#title1">大泰简介</a></li>
+                    <li><a href="about.html#title2">荣誉资质</a></li>
+                    <li><a href="about.html#title3">公司招聘</a></li>
+                    <li><a href="about.html#title4">联系方式</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="f-phone">
+            <p><img src="images/foot_phone.png"></p>
+            <p class="phone">025-68206878</p>
+            <p class="time">（服务时间）周一至周五 8:30-17:30</p>
+        </div>
+    </div>
+    <div class="Copyright">© Copyright 2017. 江苏大泰信息技术有限公司版权所有 | 苏ICP备14033905号-1</div>
+</div>
+<!--footer end-->
+
+<!--top-->
+<div class="arrow-top"></div>
+
+<!--js load-->
+<script type="text/javascript" src="http://apps.bdimg.com/libs/jquery/2.1.1/jquery.min.js"></script>
+<script type="text/javascript" src="js/common.js"></script>
+<script>
+    changePage();
+    function changePage() {
+        var hash = location.hash;
+        if(hash=='' || hash=='#'){
+            $('#rightContent').load('pages/page1.html');
+        }else{
+            hash = hash.substring(1);
+            $('.box-item a').removeClass('active');
+            $('.box-item a').eq(parseInt(hash.substr(-1,1))-1).addClass('active');
+            $('#rightContent').load('pages/'+hash+'.html');
+        }
+
+    }
+    $('.box-item a').on('click',function () {
+        $('.box-item a').removeClass('active');
+        $(this).addClass('active');
+    });
+</script>
+</body>
+</html>

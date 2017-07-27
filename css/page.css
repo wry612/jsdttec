@@ -1,0 +1,106 @@
+.section1{
+    background: url(../images/details/solution-bg1.png) right top no-repeat;
+}
+.section2{
+    background: url(../images/details/solution-bg2.png) right top no-repeat;
+}
+.section3{
+    background: url(../images/details/solution-bg3.png) right top no-repeat;
+}
+.section{
+    padding-bottom: 80px;
+    color:#171f5b;
+}
+.section-title{
+    padding:40px 80px 60px;
+}
+.section-title .p0{
+    font-size: 45px;
+}
+.section-title .p1{
+    margin-top: 20px;
+    font-size: 24px;
+}
+.diviling{
+    width: 40px;
+    height: 2px;
+    background: #f23041;
+}
+.section-desc{
+    padding: 0 95px 130px 80px;
+    font-size: 32px;
+    line-height: 40px;
+}
+.jj{
+    margin-left:75px;
+    margin-right:75px;
+}
+.jj-text{
+    margin-top:25px;
+    font-size:14px;
+    line-height: 24px;
+}
+.model-wrap{
+    margin-top:50px;
+}
+.model-wrap li{
+    margin-top:30px;
+}
+.model-wrap .p0{
+    padding-left: 25px;
+    font-size:16px;
+    line-height: 30px;
+}
+.model-wrap .p1{
+    padding-left: 25px;
+    font-size: 14px;
+    line-height: 24px;
+}
+.jj-center{
+    margin:0 80px;
+}
+.p-title{
+    margin-top:60px;
+    font-size: 45px;
+}
+.pl20 {
+    padding-left: 20px;
+}
+.f-pr {
+    position: relative;
+}
+.product-section p {
+    font: 14px/1.5 arial,"microsoft yahei";
+}
+.picSite {
+    position: absolute;
+    top: -20px;
+    right: 0;
+}
+.merit .merList {
+    width: 240px;
+    padding-left: 80px;
+    min-height: 70px;
+    position: relative;
+}
+.merit h3 {
+    font: 16px/1.5 arial,"microsoft yahei";
+    margin-bottom: 10px;
+}
+.merit p {
+    font: 14px/1.5 arial,"microsoft yahei";
+}
+.merit .merList .ico {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.product-section p {
+    font: 14px/1.5 arial,"microsoft yahei";
+}
+.f-fl {
+    float: left;
+}
+.f-fr {
+    float: right;
+}
